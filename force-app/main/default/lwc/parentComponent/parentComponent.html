@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Parent Component">
+        <div class="slds-m-around_medium">
+            <!-- Display the message variable -->
+            <p>Parent's message: {message}</p>
+            
+            <!-- Display what we received from child -->
+            <p>Message from child: {receivedMessage}</p>
+            
+            <!-- Add a button that calls updateChildMessage when clicked -->
+            <!-- COMPLETE THIS PART --> 
+            <lightning-button 
+                label="Update Child Message" 
+                class="slds-m-top_small">
+            </lightning-button>
+            
+            <!-- Include the child component below -->
+            <!-- Pass the message property to the child -->
+            <!-- Listen for the "sendmessage" event from the child -->
+            <!-- COMPLETE THIS PART -->
+            <div class="slds-m-top_medium">
+                
+            </div>
+            
+        </div>
+    </lightning-card>
+</template>
