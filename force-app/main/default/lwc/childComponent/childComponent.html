@@ -1,15 +1,14 @@
 <template>
     <div class="slds-box slds-theme_shade">
-        <h3>Child Component</h3>
+        <h3>Child ComponentX</h3>
         
-        <!-- COMPLETE THIS TEMPLATE -->
         <!-- 1. Display the message received from parent -->
-        <p class="slds-m-top_small"></p>
-
+        <p class="slds-m-top_small">Message from parent: {message}</p>
         
         <!-- 2. Add a button that calls sendToParent when clicked -->
         <lightning-button 
-            label="Send Message to Parent" 
+            label="Send Message to Parentx" 
+            onclick={sendToParent} 
             class="slds-m-top_small">
         </lightning-button>
     </div>
