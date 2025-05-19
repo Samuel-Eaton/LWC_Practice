@@ -10,8 +10,10 @@
             <!-- Add a button that calls updateChildMessage when clicked -->
             <!-- COMPLETE THIS PART --> 
             <lightning-button 
-                label="Update Child Message" 
+                label="Update Child Message"
+                onClick={callChildMethod}
                 class="slds-m-top_small">
+                variant="brand">
             </lightning-button>
             
             <!-- Include the child component below -->
@@ -19,6 +21,10 @@
             <!-- Listen for the "sendmessage" event from the child -->
             <!-- COMPLETE THIS PART -->
             <div class="slds-m-top_medium">
+                <c-child-component
+                message= {message}
+                onmessagechange={handleChildEvent}>
+                 </c-child-component>
                 
             </div>
             
