@@ -6,13 +6,14 @@ export default class ParentComponent extends LightningElement {
     
     // This handles the event from the child
     handleMessageFromChild(event) {
-        // COMPLETE THIS METHOD
+        this.receivedMessage = event.detail
         // Get the message from event.detail and store it in receivedMessage
     }
     
     // This calls a method on the child directly
     updateChildMessage() {
-        // COMPLETE THIS METHOD
+     const childComponent = this.template.querySelector(
+         childComponent.updateMessage('Success! Message sent from parent!');
         // Find the child using querySelector and call its "updateMessage" method with a new value
     }
 }
